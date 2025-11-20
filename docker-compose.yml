@@ -5,7 +5,7 @@ services:
     build: .
     container_name: homework03_app
     ports:
-      - "3000:3000"
+      - "3000:3000" # Local port 3000 → container 3000
     volumes:
-      - ./storage:/app/storage
+      - ./storage:/app/storage # Store data.json outside the container
     restart: unless-stopped
