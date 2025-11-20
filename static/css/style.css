@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  max-width: 960px;
+}
+
+textarea {
+  height: 250px;
+}

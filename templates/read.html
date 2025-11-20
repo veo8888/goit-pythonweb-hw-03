@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+
+<body>
+    {% include "header.html" %}
+
+    <div class="container mt-4">
+        <h1 class="mb-4">All Messages</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for time, msg in messages.items() %}
+
+            <div class="col">
+
+                <div class="card h-100 p-3">
+                    <strong>{{ msg.username }}</strong>
+                    <div class="mb-2">{{ msg.message }}</div>
+                    <small class="text-muted">{{ time }}</small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
